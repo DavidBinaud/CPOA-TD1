@@ -13,4 +13,12 @@ public abstract class Livret extends Compte{
     public double getSolde() {
         return super.getSolde() * (1 + tauxinteret);
     }
+
+    @Override
+    public String toString() {
+        return "Livret{" +
+                super.toString() +
+                "tauxinteret=" + tauxinteret
+                ;
+    }
 }
