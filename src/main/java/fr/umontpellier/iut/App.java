@@ -22,5 +22,12 @@ public class App {
 
 
 
+        livretspec.setPlafonddecouvert(5000);
+
+
+        System.out.println(livretspec.toString());
+
+
+
     }
 }
