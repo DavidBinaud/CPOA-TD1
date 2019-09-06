@@ -11,4 +11,13 @@ public class LivretSpeculation extends Livret {
         this.taxe = taxe;
         this.nbtransaction = 0;
     }
+
+    @Override
+    public String toString() {
+        return "LivretSpeculation{" +
+                super.toString() +
+                "taxe=" + taxe +
+                ", nbtransaction=" + nbtransaction +
+                '}';
+    }
 }
