@@ -10,6 +10,8 @@ public abstract class Compte{
 
     private String adresse;
 
+    private double plafonddecouvert;
+
     public Compte(double solde, String iban, String nomclient, String adresse) {
         this.solde = solde;
         this.iban = iban;
@@ -25,12 +27,18 @@ public abstract class Compte{
         this.nomclient = nomclient;
     }
 
+    public void setPlafonddecouvert(double plafonddecouvert) {
+        this.plafonddecouvert = plafonddecouvert;
+    }
+
     @Override
     public String toString() {
-        return "solde=" + solde +
+        return "Compte{" +
+                "solde=" + solde +
                 ", iban='" + iban + '\'' +
                 ", nomclient='" + nomclient + '\'' +
-                ", adresse='" + adresse + '\''
+                ", adresse='" + adresse + '\'' +
+                ", plafonddecouvert=" + plafonddecouvert
                 ;
     }
 }
