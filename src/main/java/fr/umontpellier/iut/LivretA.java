@@ -8,4 +8,12 @@ public class LivretA extends Livret {
         super(solde, iban, nomclient, adresse, tauxinteret);
         this.plafond = plafond;
     }
+
+    @Override
+    public String toString() {
+        return "LivretA{" +
+                super.toString() +
+                "plafond=" + plafond +
+                '}';
+    }
 }
