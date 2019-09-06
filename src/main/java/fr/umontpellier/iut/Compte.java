@@ -24,4 +24,13 @@ public abstract class Compte{
     public void setNomclient(String nomclient) {
         this.nomclient = nomclient;
     }
+
+    @Override
+    public String toString() {
+        return "solde=" + solde +
+                ", iban='" + iban + '\'' +
+                ", nomclient='" + nomclient + '\'' +
+                ", adresse='" + adresse + '\''
+                ;
+    }
 }
