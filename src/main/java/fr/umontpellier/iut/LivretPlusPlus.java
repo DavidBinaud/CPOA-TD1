@@ -8,4 +8,12 @@ public class LivretPlusPlus extends Livret {
         super(solde, iban, nomclient, adresse, tauxinteret);
         this.tauximposition = tauximposition;
     }
+
+    @Override
+    public String toString() {
+        return "LivretPlusPlus{" +
+                super.toString() +
+                "tauximposition=" + tauximposition +
+                '}';
+    }
 }
