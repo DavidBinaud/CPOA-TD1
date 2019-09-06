@@ -10,6 +10,11 @@ public class LivretPlusPlus extends Livret {
     }
 
     @Override
+    public double getSolde() {
+        return super.getSolde() * 1 - tauximposition;
+    }
+
+    @Override
     public String toString() {
         return "LivretPlusPlus{" +
                 super.toString() +
