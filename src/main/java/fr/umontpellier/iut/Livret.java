@@ -8,4 +8,9 @@ public abstract class Livret extends Compte{
         super(solde, iban, nomclient, adresse);
         this.tauxinteret = tauxinteret;
     }
+
+    @Override
+    public double getSolde() {
+        return super.getSolde() * (1 + tauxinteret);
+    }
 }
