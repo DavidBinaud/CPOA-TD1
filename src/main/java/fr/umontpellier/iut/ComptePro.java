@@ -8,4 +8,13 @@ public class ComptePro extends Compte {
         super(solde, iban, nomclient, adresse);
         this.siren = siren;
     }
+
+
+    @Override
+    public String toString() {
+        return "ComptePro{" +
+                super.toString() +
+                "siren='" + siren + '\'' +
+                '}';
+    }
 }
