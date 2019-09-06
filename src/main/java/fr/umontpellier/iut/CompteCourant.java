@@ -7,4 +7,13 @@ public class CompteCourant extends Compte {
         super(solde, iban, nomclient, adresse);
         this.numinsee = numinsee;
     }
+
+
+    @Override
+    public String toString() {
+        return "CompteCourant{" +
+                super.toString() +
+                "numinsee='" + numinsee + '\'' +
+                '}';
+    }
 }
