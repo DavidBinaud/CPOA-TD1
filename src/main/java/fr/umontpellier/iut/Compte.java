@@ -21,4 +21,7 @@ public abstract class Compte{
         return solde;
     }
 
+    public void setNomclient(String nomclient) {
+        this.nomclient = nomclient;
+    }
 }
