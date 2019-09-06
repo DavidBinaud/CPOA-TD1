@@ -12,6 +12,13 @@ public class LivretSpeculation extends Livret {
         this.nbtransaction = 0;
     }
 
+
+    @Override
+    public double getSolde() {
+        return super.getSolde() - (taxe * nbtransaction);
+    }
+
+
     @Override
     public String toString() {
         return "LivretSpeculation{" +
