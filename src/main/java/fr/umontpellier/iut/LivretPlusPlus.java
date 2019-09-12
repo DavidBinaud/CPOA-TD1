@@ -18,7 +18,7 @@ public class LivretPlusPlus extends Livret {
     public String toString() {
         return "LivretPlusPlus{" +
                 super.toString() +
-                "tauximposition=" + tauximposition +
+                " tauximposition=" + tauximposition +
                 '}';
     }
 }

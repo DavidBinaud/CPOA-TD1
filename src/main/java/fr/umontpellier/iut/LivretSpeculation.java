@@ -18,12 +18,15 @@ public class LivretSpeculation extends Livret {
         return super.getSolde() - (taxe * nbtransaction);
     }
 
+    public void setNbtransaction(int nbtransaction) {
+        this.nbtransaction = nbtransaction;
+    }
 
     @Override
     public String toString() {
         return "LivretSpeculation{" +
                 super.toString() +
-                "taxe=" + taxe +
+                " taxe=" + taxe +
                 ", nbtransaction=" + nbtransaction +
                 '}';
     }

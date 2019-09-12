@@ -33,8 +33,7 @@ public abstract class Compte{
 
     @Override
     public String toString() {
-        return "Compte{" +
-                "solde=" + getSolde() +
+        return  "solde=" + getSolde() +
                 ", iban='" + iban + '\'' +
                 ", nomclient='" + nomclient + '\'' +
                 ", adresse='" + adresse + '\'' +

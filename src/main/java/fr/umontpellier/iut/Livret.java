@@ -16,9 +16,9 @@ public abstract class Livret extends Compte{
 
     @Override
     public String toString() {
-        return "Livret{" +
+        return
                 super.toString() +
-                "tauxinteret=" + tauxinteret
+                " tauxinteret=" + tauxinteret
                 ;
     }
 }

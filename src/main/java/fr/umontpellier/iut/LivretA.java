@@ -13,7 +13,7 @@ public class LivretA extends Livret {
     public String toString() {
         return "LivretA{" +
                 super.toString() +
-                "plafond=" + plafond +
+                " plafond=" + plafond +
                 '}';
     }
 }
