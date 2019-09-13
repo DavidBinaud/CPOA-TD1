@@ -3,7 +3,7 @@ package fr.umontpellier.iut;
 public class App {
     public static void main(String[] args) {
 
-        Compte courant = new CompteCourant(3000,"FR76232313","Sarlin","Juvignac 150 rue de la bitch","120001546464");
+        //Compte courant = new CompteCourantBuilder().setSolde(3000).setIban("FR76232313").setNomclient("Sarlin").setAdresse("Juvignac 150 rue de la bitch").setNuminsee("120001546464").createCompteCourant();
 
 
         Compte pro = new ComptePro(10000,"FR1310588","Binaud","75 rue des lavandes","siren1451");
@@ -32,7 +32,7 @@ public class App {
         CompteGroupe groupeA = new CompteGroupe("FR84512235","Tintin Duchmolle","chez Dorian",50);
         CompteGroupe groupeB = new CompteGroupe("FR845415125","RINRIN TUCHMOLLE","chez nath",90);
 
-        groupeA.ajouterCompte(courant);
+        //groupeA.ajouterCompte(courant);
         groupeA.ajouterCompte(groupeB);
 
         groupeB.ajouterCompte(livretspec);
